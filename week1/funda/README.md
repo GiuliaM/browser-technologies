@@ -29,6 +29,7 @@ In my analysis I will be looking at:
 
 ### [Images](#images)
 If you try to use my Funda web app without seeing the images, it will show the following:
+
 <img src="img/funda-noimage.png" alt=“Funda app without images”>
 
 As you can see (or not) there are two things happening. The logo and banner disappeared completely instead of seeing the space it needs to be in, you can only see the alt text. The images of the search result still reserve their spot. This is because I gave them a height of 16em. Because of the API I didn't give these images an alt text, so that’s why two situations were created.
@@ -38,6 +39,7 @@ __To do__
 + using a fixed with or height on every image
 + using alt text
 using a color to fill the white space a lacking image leaves behind
+
 <img src="img/pin.png" alt=“example of colored spaces”>
 
 ---
@@ -47,6 +49,7 @@ using a color to fill the white space a lacking image leaves behind
 I used 1 custom font: Tahoma. If the font doesn’t load, it falls back on to sans-serif. This way it stays in the same style as the font Tahoma.
 
 Here is a screenshot from a split screen with on the left the Tahoma font and on the right the sans-serif fallback:
+
 <img src="img/font-check.png" alt=“Two Funda windows comparing fonts”>
 
 This works fine. What I could do to improve the performance is using font types woff and woff2. These are reduced sizes of the font and it has the widest support but isn’t available for a few older browsers.
@@ -59,6 +62,7 @@ __To do__
 ### [javascript](#js)
 
 The whole web app was build on javascript. Bij turning that off I was only able to see the search field. And that didn't function.
+
 <img src="img/search.png" alt=“Search field”>
 
 __To do__
@@ -71,6 +75,7 @@ __To do__
 ### [Cookies](#cookies)
 
 There were no cookies used.
+
 <img src="img/cookies.jpeg" alt=“cookie monster saying delete cookies”>
 
 ---
@@ -78,12 +83,36 @@ There were no cookies used.
 ### [Colors](#colors)
 
 The colors I used where the colors that Funda used on their own website. With a tool called Sim Daltonism I checked what the colorblind would see. I used 3 filters: Monochromacy (black and white), deuteranopia (red-green confusion) and tritanopia (yellow-blue confusion). I'm displaying them in the exact order:
+
 <img src="img/mono.png" alt=“website shown in black and white”>
 <img src="img/deut.png" alt=“website shown in light pink”>
 <img src="img/trit.png" alt=“website shown in dark pink”>
 
+The contrast seems good on all of the filter, so I dont see why this should be adjusted.
+
 ---
 
 ### [Internet speed](#int)
+
+Testing this was really interesting. I put the throtteling on: Regular 2G (300 ms, 250 kb/s, 50 kb/s). It took 9.02 second to load, because of the Tahoma font:
+
+<img src="img/loadfont.png" alt=“statistics loading time homepage with font”>
+
+
+It took only 47ms (!) to load without the font:
+
+<img src="img/loadhome.png" alt=“statistics loading time homepage without font”>
+
+With the Tahoma font it took 8.94 s and the 25 houses took 13.1 min (!) to load.
+
+<img src="img/searchwithfont.png" alt="statistics loading time search query web app">
+
+The search query was also fast. Without the font it took 54 ms. However, it took 1.1 min to load all the 25 houses. To prevent this we could use smaller img sizes from the funda API.
+
+<img src="img/searchsansfont.png" alt="statistics loading time search query web app">
+
+__To do__
++ use woff and woff2
++ use different API information
 
 
