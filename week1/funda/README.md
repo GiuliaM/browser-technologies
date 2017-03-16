@@ -1,4 +1,4 @@
-##Funda website analysis
+## Funda website analysis
 
 As a developer you want everybody to be able to visit your work (website/app).
 
@@ -15,17 +15,25 @@ This is what I showed Funda:
 <img src="img/funda-home.png" alt=“Funda app home page”>
 <img src="img/funda-detail.png" alt=“Funda app detail page”>
 
-In my analysis I will be looking at: images, custom fonts, javascript, colors, internet speed, cookies, screen reader and navigation without mouse.
+In my analysis I will be looking at:
++ [images](#images)
++ custom fonts
++ javascript
++ colors
++ internet speed
++ cookies
++ screen reader
++ navigation without mouse.
 
 ---
 
-###Images
+### [Images](#images)
 If you try to use my Funda web app without seeing the images, it will show the following:
 <img src="img/funda-noimage.png" alt=“Funda app without images”>
 
 As you can see (or not) there are two things happening. The logo and banner disappeared completely instead of seeing the space it needs to be in, you can only see the alt text. The images of the search result still reserve their spot. This is because I gave them a height of 16em. Because of the API I didn't give these images an alt text, so that’s why two situations were created.
 
-_To do_
+__To do__
 + using svg for logos and banners
 + using a fixed with or height on every image
 + using alt text
