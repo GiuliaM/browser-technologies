@@ -18,12 +18,12 @@ This is what I showed Funda:
 In my analysis I will be looking at:
 + [Images](#images)
 + [Custom fonts](#custom-fonts)
-+ [javascript](#js)
++ [Javascript](#js)
 + [Cookies](#cookies)
 + [Colors](#colors)
 + [Internet speed](#internet-speed)
 + [Screen reader](#screen-reader)
-+ [navigation without mouse](#navigation-without-mouse)
++ [Navigation without mouse](#navigation-without-mouse)
 
 ---
 
@@ -59,7 +59,7 @@ __To do__
 
 ---
 
-### [javascript](#js)
+### [Javascript](#js)
 
 The whole web app was build on javascript. Bij turning that off I was only able to see the search field. And that didn't function.
 
@@ -132,7 +132,7 @@ I did a test with the voice over from Apple. I normally don't use this tool and 
 __To do__
 + try using a template
 
-### [navigation without mouse](#navigation-without-mouse)
+### [Navigation without mouse](#navigation-without-mouse)
 
 Tabbing through my website was easy. I didn't need to use my mouse. Everything is clickable. I can tab through the navigation, through de filters and through the houses. Even the order of the houses is correct (2 sections of houses, first section is the direct result). If you are on a house and you hit the enter button, you end up at the detailpage. So it really works well. What I could change is darkening the border of the :focus for the people that don't see the difference that well.
 
