@@ -21,7 +21,7 @@ In my analysis I will be looking at:
 + [javascript](#js)
 + [Cookies](#cookies)
 + [Colors](#colors)
-+ [Internet speed](#int)
++ [Internet speed](#internet-speed)
 + screen reader
 + navigation without mouse.
 
@@ -92,7 +92,7 @@ The contrast seems good on all of the filter, so I dont see why this should be a
 
 ---
 
-### [Internet speed](#int)
+### [Internet speed](#internet-speed)
 
 Testing this was really interesting. I put the throtteling on: Regular 2G (300 ms, 250 kb/s, 50 kb/s). It took 9.02 second to load, because of the Tahoma font:
 
