@@ -17,7 +17,7 @@ This is what I showed Funda:
 
 In my analysis I will be looking at:
 + [Images](#images)
-+ [Custom fonts](#fonts)
++ [Custom fonts](#custom-fonts)
 + javascript
 + colors
 + internet speed
@@ -40,7 +40,7 @@ __To do__
 using a color to fill the white space a lacking image leaves behind
 <img src="img/pin.png" alt=“example of colored spaces”>
 
-### [Custom fonts](#fonts)
+### [Custom fonts](#custom-fonts)
 
 I used 1 custom font: Tahoma. If the font doesn’t load, it falls back on to sans-serif. This way it stays in the same style as the font Tahoma.
 
