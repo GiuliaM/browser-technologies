@@ -22,8 +22,7 @@ In my analysis I will be looking at:
 + [Cookies](#cookies)
 + [Colors](#colors)
 + [Internet speed](#internet-speed)
-+
-+ screen reader
++ [Screen reader](#screen-reader)
 + navigation without mouse.
 
 ---
@@ -114,8 +113,16 @@ The search query was also fast. Without the font it took 54 ms. However, it took
 
 <img src="img/searchsansfont.png" alt="statistics loading time search query web app">
 
+
+I also tested this on a Samsung s4-mini, which runs on 3G. It didn't have problems loading the houses.
+
+<img src="img/s4.JPG" alt="Search Query on a Samsung S4-mini">
+
+
 __To do__
 + use woff and woff2
 + use different API information
 
+---
 
+### [Screen reader](#screen-reader)
