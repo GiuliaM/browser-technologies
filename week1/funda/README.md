@@ -23,7 +23,7 @@ In my analysis I will be looking at:
 + [Colors](#colors)
 + [Internet speed](#internet-speed)
 + [Screen reader](#screen-reader)
-+ navigation without mouse.
++ [navigation without mouse](#navigation-without-mouse)
 
 ---
 
@@ -126,3 +126,18 @@ __To do__
 ---
 
 ### [Screen reader](#screen-reader)
+
+I did a test with the voice over from Apple. I normally don't use this tool and so I struggeled with the commands. However I managed to let it read the houses to me. This was dissapointing. It used the exact html I put in my javascript. That also means I got the URL from the image. I'm not sure how to solve that. Maybe I could try using a template. Eventhough it was dissapointing to me, it did work.
+
+__To do__
++ try using a template
+
+### [navigation without mouse](#navigation-without-mouse)
+
+Tabbing through my website was easy. I didn't need to use my mouse. Everything is clickable. I can tab through the navigation, through de filters and through the houses. Even the order of the houses is correct (2 sections of houses, first section is the direct result). If you are on a house and you hit the enter button, you end up at the detailpage. So it really works well. What I could change is darkening the border of the :focus for the people that don't see the difference that well.
+
+<img src="img/filter.png" alt="focus on the filter">
+<img src="img/selecthouse.png" alt="focus on the house">
+
+__To do__
++ change the :focus color to a darker color
