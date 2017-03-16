@@ -22,6 +22,7 @@ In my analysis I will be looking at:
 + [Cookies](#cookies)
 + [Colors](#colors)
 + [Internet speed](#internet-speed)
++
 + screen reader
 + navigation without mouse.
 
