@@ -18,7 +18,7 @@ This is what I showed Funda:
 In my analysis I will be looking at:
 + [Images](#images)
 + [Custom fonts](#custom-fonts)
-+ [Javascript](#js)
++ [Javascript](#javascript)
 + [Cookies](#cookies)
 + [Colors](#colors)
 + [Internet speed](#internet-speed)
@@ -59,7 +59,7 @@ __To do__
 
 ---
 
-### [Javascript](#js)
+### [Javascript](#javascript)
 
 The whole web app was build on javascript. Bij turning that off I was only able to see the search field. And that didn't function.
 
