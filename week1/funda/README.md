@@ -103,6 +103,8 @@ It took only 47ms (!) to load without the font:
 
 <img src="img/loadhome.png" alt=“statistics loading time homepage without font”>
 
+
+The search query was also interesting to test.
 With the Tahoma font it took 8.94 s and the 25 houses took 13.1 min (!) to load.
 
 <img src="img/searchwithfont.png" alt="statistics loading time search query web app">
