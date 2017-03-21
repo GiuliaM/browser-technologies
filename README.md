@@ -25,6 +25,14 @@ __The following browsers don’t support webP:__
 __Solution/Fallback:__
 - add an img tag in the picture element.
 
+If the picture element and the webP don't get recognized, it will automatically skip them and only use the img element.
+
+__Demo__
+For the demo I alterized two pictures. I added a blue block with the text WebP on the WebP image and for the PNG I changed the text into PNG. WebP doesn't work in safari, so if you want to test it you should look at it in chrome (WebP) and in safari (PNG).
+
+<img src="week2/img/octo-chrome.png" alt="Octopus WebP">
+<img src="week2/img/octo-safari.png" alt="Octopus PNG">
+
 
 __Sources:__
 - [WebP](https://developers.google.com/speed/webp/)
