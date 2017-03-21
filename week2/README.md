@@ -30,6 +30,8 @@ If the picture element and the webP don't get recognized, it will automatically 
 __Demo__
 For the demo I alterized two pictures. I added a blue block with the text WebP on the WebP image and for the PNG I changed the text into PNG. WebP doesn't work in safari, so if you want to test it you should look at it in chrome (WebP) and in safari (PNG).
 
+[Demo](https://giuliam.github.io/browser-technologies/week2/feature1html/index.html)
+
 <img src="week2/img/octo-chrome.png" alt="Octopus WebP">
 <img src="week2/img/octo-safari.png" alt="Octopus PNG">
 
