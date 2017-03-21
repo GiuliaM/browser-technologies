@@ -3,7 +3,7 @@
 6 features explained and explored
 ---
 
-##WebP
+## WebP
 WebP is an image format that ensures superior compression (lossless and lossy) of photos by using predictive coding to encode an image. With WebP web developers can enhanche the speed of their websites.
 
 __Advantages are:__
