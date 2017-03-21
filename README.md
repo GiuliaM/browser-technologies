@@ -37,5 +37,6 @@ For the demo I alterized two pictures. I added a blue block with the text WebP o
 __Sources:__
 - [WebP](https://developers.google.com/speed/webp/)
 - [Keycdn](https://www.keycdn.com/blog/convert-to-webp-the-successor-of-jpeg/)
+- [Envatotuts+](https://code.tutsplus.com/tutorials/better-responsive-images-with-the-picture-element--net-36583)
 
 ---
