@@ -1,6 +1,6 @@
-# browser-technologies
+# features
 
-All of the assignments for the course browser-technologies
+6 features explained and explored
 ---
 
 ##WebP

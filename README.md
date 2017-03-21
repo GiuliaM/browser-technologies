@@ -1,3 +1,4 @@
-# features
+# browser-technologies
 
-6 features explained and explored
+All of the assignments for the course browser-technologies
+
