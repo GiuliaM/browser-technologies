@@ -20,7 +20,7 @@ __The following browsers don’t support webP:__
 - Firefox
 - Safari/IOS Safari
 
-<img src="week2/img/webp-browser.png" alt="Overview browser support">
+<img src="img/webp-browser.png" alt="Overview browser support">
 
 __Solution/Fallback:__
 - add an img tag in the picture element.
@@ -32,8 +32,8 @@ For the demo I alterized two pictures. I added a blue block with the text WebP o
 
 [Demo](https://giuliam.github.io/browser-technologies/week2/feature1html/index.html)
 
-<img src="week2/img/octo-chrome.png" alt="Octopus WebP">
-<img src="week2/img/octo-safari.png" alt="Octopus PNG">
+<img src="img/octo-chrome.png" alt="Octopus WebP">
+<img src="img/octo-safari.png" alt="Octopus PNG">
 
 
 __Sources:__
