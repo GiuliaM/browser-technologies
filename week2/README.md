@@ -71,7 +71,7 @@ __Solution/Fallback:__
 When a browser isn't able to use `<input type=color>` it will fallback on `text=input`. By giving it a `placeholder=''` you can still tell the user what to enter in the text input. [Demo](https://giuliam.github.io/browser-technologies/week2/feature2html/index.html)
 
 <img src="img/color-chrome.png" alt="Color picker Chrome">
-<img src="img/color-safari.png" alt="Inputfield Safari">
+<img src="img/color-safar.png" alt="Inputfield Safari">
 
 __Sources:__
 - [Wufoo](https://www.wufoo.com/html5/types/6-color.html)
