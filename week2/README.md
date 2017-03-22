@@ -11,7 +11,7 @@ __Advantages are:__
 - 25-24% smaller compared to JPEG
 - supports transparency (just 22% extra bytes)
 
-__Disadvantages art:__
+__Disadvantages are:__
 - not working in all browsers
 
 __The following browsers don’t support webP:__
@@ -42,3 +42,27 @@ __Sources:__
 - [Envatotuts+](https://code.tutsplus.com/tutorials/better-responsive-images-with-the-picture-element--net-36583)
 
 ---
+
+## `<input type=color>`
+`<input type=color>` is an input field in which the user can pick a color.
+
+
+__Advantages are:__
+- Easy and fun way for users to pick a color
+
+__Disadvantages are:__
+- not working in all browsers
+
+__The following browsers don’t support webP:__
+- Internet Explore
+- Opera mini
+- Safari/IOS Safari
+
+__Solution/Fallback:__
+- use a placeholder
+
+When a browser isn't able to use `<input type=color>` it will fallback on `text=input`. By giving it a `placeholder=''` you can still tell the user what to enter in the text input.
+
+__Sources:__
+- [Wufoo](https://www.wufoo.com/html5/types/6-color.html)
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color)

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-    <title>Feature</title>
+    <title>Feature - input type=color</title>
 <!--
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="static/style.css">
@@ -11,7 +11,9 @@
 <body>
     <main>
 
-
+        <label for="background-color">Choose a backgroundcolor :</label>
+        <input id="background-color" pattern="#[a-f0-9]{6}" placeholder="hexadecimal" type="color" />
+        <input type="submit" value=Send>
 
     </main>
 </body>
