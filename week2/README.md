@@ -5,8 +5,10 @@
 - [`<input type=color>`](#input)
 ---
 
-## [WebP](#webp) [Demo](https://giuliam.github.io/browser-technologies/week2/feature1html/index.html)
+## [WebP](#webp)
 WebP is an image format that ensures superior compression (lossless and lossy) of photos by using predictive coding to encode an image. With WebP web developers can enhanche the speed of their websites.
+
+[Demo](https://giuliam.github.io/browser-technologies/week2/feature1html/index.html)
 
 __Advantages are:__
 - 26% smaller compared to PNG
@@ -45,8 +47,9 @@ __Sources:__
 
 ---
 
-## [`<input type=color>`](#input)  [Demo](https://giuliam.github.io/browser-technologies/week2/feature2html/index.html)
+## [`<input type=color>`](#input)
 `<input type=color>` is an input field in which the user can pick a color.
+[Demo](https://giuliam.github.io/browser-technologies/week2/feature2html/index.html)
 
 
 __Advantages are:__
