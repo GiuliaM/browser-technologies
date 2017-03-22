@@ -2,7 +2,7 @@
 
 6 features explained and explored
 - [WebP](#webp)
-- [`<input type=color>`](#<input-type=color>)
+- [`<input type=color>`](#input-type=color)
 ---
 
 ## [WebP](#webp)
@@ -45,7 +45,7 @@ __Sources:__
 
 ---
 
-## [`<input type=color>`](#<input-type=color>)
+## [`<input type=color>`](#input-type=color)
 `<input type=color>` is an input field in which the user can pick a color.
 
 
