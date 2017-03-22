@@ -1,9 +1,11 @@
 # features
 
 6 features explained and explored
+- [WebP](#webp)
+- [`<input type=color>`](#input)
 ---
 
-## WebP
+## [WebP](#webp)
 WebP is an image format that ensures superior compression (lossless and lossy) of photos by using predictive coding to encode an image. With WebP web developers can enhanche the speed of their websites.
 
 __Advantages are:__
@@ -43,7 +45,7 @@ __Sources:__
 
 ---
 
-## `<input type=color>`
+## [`<input type=color>`](#input)
 `<input type=color>` is an input field in which the user can pick a color.
 
 
@@ -58,10 +60,18 @@ __The following browsers don’t support webP:__
 - Opera mini
 - Safari/IOS Safari
 
+<img src="img/color-browser.png" alt="Overview browser support">
+
 __Solution/Fallback:__
 - use a placeholder
 
 When a browser isn't able to use `<input type=color>` it will fallback on `text=input`. By giving it a `placeholder=''` you can still tell the user what to enter in the text input.
+
+<img src="img/color-chrome.png" alt="Color picker Chrome">
+<img src="img/color-safari.png" alt="Inputfield Safari">
+
+
+[Demo](https://giuliam.github.io/browser-technologies/week2/feature2html/index.html)
 
 __Sources:__
 - [Wufoo](https://www.wufoo.com/html5/types/6-color.html)
