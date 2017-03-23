@@ -39,8 +39,8 @@ For the demo I alterized two pictures. I added a blue block with the text WebP o
 
 [Demo](https://giuliam.github.io/browser-technologies/week2/feature1html/index.html)
 
-<img src="img/octo-chrome.png" alt="Octopus WebP">
-<img src="img/octo-safari.png" alt="Octopus PNG">
+<img src="img/octo-chrome.png" alt="Octopus WebP" style="height:5em;">
+<img src="img/octo-safari.png" alt="Octopus PNG" style="height:5em;">
 
 
 __Sources:__
@@ -135,6 +135,10 @@ __The following browsers don’t support `linear-gradient()`:__
 __Solution/Fallback:__
 - set a `background-color`
 
-
 [Demo](https://giuliam.github.io/browser-technologies/week2/feature4css/index.html)
+
+<img src="img/ie-test.JPG" alt="Layout website on Internet Explore">
+
+__Sources:__
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient)
 
