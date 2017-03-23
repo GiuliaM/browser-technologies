@@ -4,6 +4,8 @@
 - [WebP](#webp) (HTML)
 - [`<input type=color>`](#input) (HTML)
 - [Display flex](#display-flex) (CSS)
+- [Gradient](#gradient) (CSS)
+
 ---
 
 ## [WebP](#webp)
@@ -106,9 +108,33 @@ Depending on what kind of style you want, you can change heights
 
 [Demo](https://giuliam.github.io/browser-technologies/week2/feature3css/index.html)
 
+Tested it on a windows tablet with Internet Explore:
+<img src="img/ie-test.JPG" alt="Layout website on Internet Explore">
+<img src="img/ie-test2.JPG" alt="Layout website on Internet Explore">
+
 __Sources:__
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 
+---
+
+## [Gradient](#gradient)
+The CSS `linear-gradient()` makes it able to display a smooth a transition between colors. You can also decide the angle in which they should meet. For the demo I used this code: `linear-gradient(135deg, pink, cornflowerblue);` de 135deg is the angle you set, and in my case I used the colors pink and cornflowerblue.
+[Demo](https://giuliam.github.io/browser-technologies/week2/feature4css/index.html)
+
+__Advantages are:__
+- You can create a more dynamic background
+
+__Disadvantages are:__
+- Not supported by all browsers
+
+__The following browsers don’t support `linear-gradient()`:__
+- Opera Mini
+
+<img src="img/gradient-browser.png" alt="Overview browser support">
+
+__Solution/Fallback:__
+- set a `background-color`
 
 
+[Demo](https://giuliam.github.io/browser-technologies/week2/feature4css/index.html)
 
