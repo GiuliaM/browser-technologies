@@ -72,8 +72,8 @@ __Solution/Fallback:__
 
 When a browser isn't able to use `<input type=color>` it will fallback on `text=input`. By giving it a `placeholder=''` you can still tell the user what to enter in the text input. [Demo](https://giuliam.github.io/browser-technologies/week2/feature2html/index.html)
 
-<img src="img/color-chrome.png" alt="Color picker Chrome">
-<img src="img/color-safari.png" alt="Inputfield Safari">
+<img src="img/color-chrome.png" alt="Color picker Chrome" height="400px">
+<img src="img/color-safari.png" alt="Inputfield Safari" height="400px">
 
 __Sources:__
 - [Wufoo](https://www.wufoo.com/html5/types/6-color.html)
@@ -108,8 +108,8 @@ Depending on what kind of style you want, you can change heights
 [Demo](https://giuliam.github.io/browser-technologies/week2/feature3css/index.html)
 
 Tested it on a windows tablet with Internet Explore:
-<img src="img/ie-test.JPG" alt="Layout website on Internet Explore">
-<img src="img/ie-test2.JPG" alt="Layout website on Internet Explore">
+<img src="img/ie-test.JPG" alt="Layout website on Internet Explore" height="400px">
+<img src="img/ie-test2.JPG" alt="Layout website on Internet Explore" height="400px">
 
 __Sources:__
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
@@ -136,7 +136,8 @@ __Solution/Fallback:__
 
 [Demo](https://giuliam.github.io/browser-technologies/week2/feature4css/index.html)
 
-<img src="img/ie-test.JPG" alt="Layout website on Internet Explore">
+This is what you would get if the `linear-gradient()` isn't supported:
+<img src="img/opera.PNG" alt="A plum colored block" height="400px">
 
 __Sources:__
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient)
