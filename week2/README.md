@@ -72,8 +72,7 @@ __Solution/Fallback:__
 
 When a browser isn't able to use `<input type=color>` it will fallback on `text=input`. By giving it a `placeholder=''` you can still tell the user what to enter in the text input. [Demo](https://giuliam.github.io/browser-technologies/week2/feature2html/index.html)
 
-<img src="img/color-chrome.png" alt="Color picker Chrome" height="400px">
-<img src="img/color-safari.png" alt="Inputfield Safari" height="400px">
+<img src="img/color-chrome.png" alt="Color picker Chrome" height="400px"><img src="img/color-safari.png" alt="Inputfield Safari" height="200px">
 
 __Sources:__
 - [Wufoo](https://www.wufoo.com/html5/types/6-color.html)
@@ -137,6 +136,7 @@ __Solution/Fallback:__
 [Demo](https://giuliam.github.io/browser-technologies/week2/feature4css/index.html)
 
 This is what you would get if the `linear-gradient()` isn't supported:
+
 <img src="img/opera.PNG" alt="A plum colored block" height="400px">
 
 __Sources:__
