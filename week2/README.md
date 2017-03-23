@@ -11,7 +11,7 @@
 ## [WebP](#webp)
 WebP is an image format that ensures superior compression (lossless and lossy) of photos by using predictive coding to encode an image. With WebP web developers can enhanche the speed of their websites.
 
-[Demo](https://giuliam.github.io/browser-technologies/week2/feature1html/index.html)
+__[Demo](https://giuliam.github.io/browser-technologies/week2/feature1html/index.html)__
 
 __Advantages are:__
 - 26% smaller compared to PNG
@@ -133,7 +133,7 @@ __The following browsers don’t support `linear-gradient()`:__
 __Solution/Fallback:__
 - set a `background-color`
 
-[Demo](https://giuliam.github.io/browser-technologies/week2/feature4css/index.html)
+__[Demo](https://giuliam.github.io/browser-technologies/week2/feature4css/index.html)__
 
 This is what you would get if the `linear-gradient()` isn't supported:
 
