@@ -51,7 +51,7 @@ __Sources:__
 
 ## [`<input type=color>`](#input)
 `<input type=color>` is an input field in which the user can pick a color.
-[Demo](https://giuliam.github.io/browser-technologies/week2/feature2html/index.html)
+__[Demo](https://giuliam.github.io/browser-technologies/week2/feature2html/index.html)__
 
 
 __Advantages are:__
@@ -70,7 +70,7 @@ __The following browsers don’t support webP:__
 __Solution/Fallback:__
 - use a placeholder
 
-When a browser isn't able to use `<input type=color>` it will fallback on `text=input`. By giving it a `placeholder=''` you can still tell the user what to enter in the text input. [Demo](https://giuliam.github.io/browser-technologies/week2/feature2html/index.html)
+When a browser isn't able to use `<input type=color>` it will fallback on `text=input`. By giving it a `placeholder=''` you can still tell the user what to enter in the text input. __[Demo](https://giuliam.github.io/browser-technologies/week2/feature2html/index.html)__
 
 <img src="img/color-chrome.png" alt="Color picker Chrome" height="400px"><img src="img/color-safari.png" alt="Inputfield Safari" height="200px">
 
@@ -82,7 +82,7 @@ __Sources:__
 
 ## [Display flex](#display-flex)
 The main idea behind display is to give the container the ability to alter its items' width/height (and order) to best fill the available space. This is usefull to make websites responsive: available for all sizes.
-[Demo](https://giuliam.github.io/browser-technologies/week2/feature2html/index.html)
+__[Demo](https://giuliam.github.io/browser-technologies/week2/feature2html/index.html)__
 
 __Advantages are:__
 - Responsively low maintainance
@@ -104,7 +104,7 @@ __Solution/Fallback:__
 Some browsers can't handle `display:flex`. For example Internet Explore. In that case you need a fallback that can support browsers that don't support `display:flex`. You can do this with `display:block` and `float:left`/`float:right`.
 Depending on what kind of style you want, you can change heights
 
-[Demo](https://giuliam.github.io/browser-technologies/week2/feature3css/index.html)
+__[Demo](https://giuliam.github.io/browser-technologies/week2/feature3css/index.html)__
 
 Tested it on a windows tablet with Internet Explore:
 <img src="img/ie-test.JPG" alt="Layout website on Internet Explore" height="400px">
@@ -117,7 +117,7 @@ __Sources:__
 
 ## [Gradient](#gradient)
 The CSS `linear-gradient()` makes it able to display a smooth a transition between colors. You can also decide the angle in which they should meet. For the demo I used this code: `linear-gradient(135deg, pink, cornflowerblue);` de 135deg is the angle you set, and in my case I used the colors pink and cornflowerblue.
-[Demo](https://giuliam.github.io/browser-technologies/week2/feature4css/index.html)
+__[Demo](https://giuliam.github.io/browser-technologies/week2/feature4css/index.html)__
 
 __Advantages are:__
 - You can create a more dynamic background
