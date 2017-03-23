@@ -95,6 +95,8 @@ __The following browsers don’t support `display:flex`:__
 - Internet Explore 11
 - Older browsers
 
+<img src="img/flex-browser.png" alt="Overview browser support">
+
 __Solution/Fallback:__
 - Creat a fallback with float
 
