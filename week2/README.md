@@ -39,8 +39,8 @@ For the demo I alterized two pictures. I added a blue block with the text WebP o
 
 [Demo](https://giuliam.github.io/browser-technologies/week2/feature1html/index.html)
 
-<img src="img/octo-chrome.png" alt="Octopus WebP" style="height:5em;">
-<img src="img/octo-safari.png" alt="Octopus PNG" style="height:5em;">
+<img src="img/octo-chrome.png" alt="Octopus WebP" style="max-height:5em;">
+<img src="img/octo-safari.png" alt="Octopus PNG" style="max-height:5em;">
 
 
 __Sources:__
