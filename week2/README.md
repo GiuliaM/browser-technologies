@@ -1,8 +1,9 @@
 # features
 
 6 features explained and explored
-- [WebP](#webp)
-- [`<input type=color>`](#input)
+- [WebP](#webp) (HTML)
+- [`<input type=color>`](#input) (HTML)
+- [Display flex](#display-flex) (CSS)
 ---
 
 ## [WebP](#webp)
@@ -76,4 +77,36 @@ When a browser isn't able to use `<input type=color>` it will fallback on `text=
 __Sources:__
 - [Wufoo](https://www.wufoo.com/html5/types/6-color.html)
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color)
+
+---
+
+## [Display flex](#display-flex)
+The main idea behind display is to give the container the ability to alter its items' width/height (and order) to best fill the available space. This is usefull to make websites responsive: available for all sizes.
+[Demo](https://giuliam.github.io/browser-technologies/week2/feature2html/index.html)
+
+__Advantages are:__
+- Responsively low maintainance
+- Adaptive to a lot of screens
+
+__Disadvantages are:__
+- Not supported by all browsers
+
+__The following browsers don’t support `display:flex`:__
+- Internet Explore 11
+- Older browsers
+
+__Solution/Fallback:__
+- Creat a fallback with float
+
+
+Some browsers can't handle `display:flex`. For example Internet Explore. In that case you need a fallback that can support browsers that don't support `display:flex`. You can do this with `display:block` and `float:left`/`float:right`.
+Depending on what kind of style you want, you can change heights
+
+[Demo](https://giuliam.github.io/browser-technologies/week2/feature3css/index.html)
+
+__Sources:__
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
+
+
+
 
