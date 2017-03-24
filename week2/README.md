@@ -165,3 +165,17 @@ __Sources:__
 ---
 
 ## [Google Maps](#google-maps)
+Google Maps is an online map. Google maps can be usefull in many ways. For my demo i'm using the Google Maps API to show the user which pleaces are nearby.
+
+__Advantages are:__
+- Reliable mapping service
+- Easy to use
+
+
+__Sources:__
+- [Google Maps API](https://developers.google.com/maps/documentation/javascript/earthquakes)
+- [Google Maps API](https://developers.google.com/maps/documentation/javascript/adding-a-google-map)
+- [Mapcoordiinates](http://www.mapcoordinates.net/en)
+
+
+

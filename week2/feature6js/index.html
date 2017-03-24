@@ -3,15 +3,49 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
     <title>Feature</title>
-<!--
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="static/style.css">
--->
+   <style>
+       body{
+           font-family: sans-serif;
+           margin: 0;
+           padding: 0;
+       }
+       #map, .map {
+        height: 400px;
+        width: 100%;
+       }
+       .info{
+           padding: 1em;
+           width: 30%;
+       }
+    </style>
 </head>
 <body>
-    <main>
+    <section id="map">
+    <img src="maps.png" alt="Kaart van spanje gefocust op Sevilla" class="map">
 
+    </section>
+    <section class="info">
+       <h2>San Gil</h2>
+        <h3>In het kort</h3>
+        <p>Hotel San Gil ligt in het historische centrum van Sevilla. Krijg in dit hotel het typisch Andalusische gevoel door de kleurrijke tegels, de originele ramen en de Spaanse tuin. De ruime kamers hebben historische, moderne en elegante elementen, en zijn voorzien van airco en gratis wifi. Op loopafstand ligt de prachtige kathedraal van Sevilla, de klokkentoren van Giralda en Real Alcázar. Na een hele dag rondstruinen door deze prachtige stad, bieden de tuin en het zwembad een goede uitkomst om even bij te komen. 's Avonds is het à la carte restaurant geopend; maak kennis met de lokale keuken en bewonder tijdens het eten een traditionele flamencoshow. Buen provecho!</p>
+    </section>
 
+<script>
+      function initMap() {
+        var uluru = {lat: 37.3890924, lng: -5.9844589};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 9,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+</script>
 
-    </main>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKnPSPMA8_8hrbmL1_N6eAl2OTFn-qzMM&callback=initMap">
+</script>
+
 </body>
