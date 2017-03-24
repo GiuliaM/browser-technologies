@@ -165,12 +165,21 @@ __Sources:__
 ---
 
 ## [Google Maps](#google-maps)
-Google Maps is an online map. Google maps can be usefull in many ways. For my demo i'm using the Google Maps API to show the user which pleaces are nearby.
+Google Maps is an online map. Google maps can be usefull in many ways. For my demo i'm using the Google Maps API to show the user which pleaces are nearby. __[Demo](https://giuliam.github.io/browser-technologies/week2/feature6js/index.html)__
 
 __Advantages are:__
 - Reliable mapping service
 - Easy to use
 
+__Disadvantages are:__
+- If javaScript isn't working, there will not be a map.
+
+__Solution/Fallback:__
+- replace the map by an image of that location.
+
+In my demo I used an `<img>`. If javaScript isn't loaded it won't write over the `<img>`. If it is available, the section will be filled with everything that's told in javascript. This means that when JavaScript is working, the `<img>` won't be visible.
+
+__[Demo](https://giuliam.github.io/browser-technologies/week2/feature6js/index.html)__
 
 __Sources:__
 - [Google Maps API](https://developers.google.com/maps/documentation/javascript/earthquakes)
