@@ -143,7 +143,7 @@ __Sources:__
 
 ---
 
-## [Progressbar](#progress-bar)
+## [Progress bar](#progress-bar)
 A progress bar gives the user an indication about how far along they are in a process.
 
 __Advantages are:__
@@ -152,6 +152,8 @@ __Advantages are:__
 
 __Solution/Fallback:__
 - create a working fallback on css
+
+In the demo I buid two progress bars. One working on CSS and the other working on javaScript. If you turn the javaScript off in your browser, the progress bar won't do anything. While the CSS keeps on doing its job.
 
 __[Demo](https://giuliam.github.io/browser-technologies/week2/feature5js/index.html)__
 
