@@ -5,6 +5,8 @@
 - [`<input type=color>`](#input) (HTML)
 - [Display flex](#display-flex) (CSS)
 - [Gradient](#gradient) (CSS)
+- [Progress bar](#progress-bar) (JS)
+- [Google Maps](#google-maps) (JS)
 
 ---
 
@@ -102,9 +104,7 @@ __Solution/Fallback:__
 
 
 Some browsers can't handle `display:flex`. For example Internet Explore. In that case you need a fallback that can support browsers that don't support `display:flex`. You can do this with `display:block` and `float:left`/`float:right`.
-Depending on what kind of style you want, you can change heights
-
-__[Demo](https://giuliam.github.io/browser-technologies/week2/feature3css/index.html)__
+Depending on what kind of style you want, you can change heights. __[Demo](https://giuliam.github.io/browser-technologies/week2/feature3css/index.html)__
 
 Tested it on a windows tablet with Internet Explore:
 <img src="img/ie-test.JPG" alt="Layout website on Internet Explore" height="400px">
@@ -116,8 +116,7 @@ __Sources:__
 ---
 
 ## [Gradient](#gradient)
-The CSS `linear-gradient()` makes it able to display a smooth a transition between colors. You can also decide the angle in which they should meet. For the demo I used this code: `linear-gradient(135deg, pink, cornflowerblue);` de 135deg is the angle you set, and in my case I used the colors pink and cornflowerblue.
-__[Demo](https://giuliam.github.io/browser-technologies/week2/feature4css/index.html)__
+The CSS `linear-gradient()` makes it able to display a smooth a transition between colors. You can also decide the angle in which they should meet. For the demo I used this code: `linear-gradient(135deg, pink, cornflowerblue);` de 135deg is the angle you set, and in my case I used the colors pink and cornflowerblue. __[Demo](https://giuliam.github.io/browser-technologies/week2/feature4css/index.html)__
 
 __Advantages are:__
 - You can create a more dynamic background
@@ -142,3 +141,25 @@ This is what you would get if the `linear-gradient()` isn't supported:
 __Sources:__
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient)
 
+---
+
+## [Progressbar](#progress-bar)
+A progress bar gives the user an indication about how far along they are in a process.
+
+__Advantages are:__
+- User can indicate how much steps they still need to make to compleet an task
+- Making steps smaller is more comfortable for the user
+
+__Solution/Fallback:__
+- create a working fallback on css
+
+__[Demo](https://giuliam.github.io/browser-technologies/week2/feature5js/index.html)__
+
+__Sources:__
+- [Haiqing Wang](https://codepen.io/whqet/pen/hfDzp)
+- [W3Schools](https://www.w3schools.com/howto/howto_js_progressbar.asp)
+
+
+---
+
+## [Google Maps](#google-maps)
