@@ -36,7 +36,7 @@
         }
 
         .progress {
-          padding: 0.3em;
+          padding: 4px;
           background: rgba(0, 0, 0, 0.25);
           border-radius: 6px;
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
@@ -51,14 +51,13 @@
           box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
         }
 
-        /*
+/*
          * Note: using adjacent or general sibling selectors combined with
          *       pseudo classes doesn't work in Safari 5.0 and Chrome 12.
          *       See this article for more info and a potential fix:
          *       http://css-tricks.com/webkit-sibling-bug/
-         */
+*/
 
-/*
         #five:checked ~ .progress > .progress-bar {
           width: 5%;
           background-color: #f63a0f;
@@ -83,7 +82,6 @@
           width: 100%;
           background-color: #86e01e;
         }
-*/
 
         .radio {
           display: none;
@@ -103,20 +101,9 @@
           color: white;
           background: rgba(0, 0, 0, 0.25);
         }
-/*
-        .hide{
-            display: none;
-        }
-*/
-        #myProgress {
-          width: 100%;
-          background-color: #505050;
-          text-align: center;
-          height: 1em;
-
-        }
 
         #myBar {
+            color: white;
             height: 1em;
             width: 5%;
             background-color: #4CAF50;
@@ -126,54 +113,53 @@
         button{
             margin-top: 1em;
         }
-
     </style>
 </head>
 <body>
     <main>
-        <div class="container">
-          <input type="radio" class="radio" name="progress" value="5" id="five">
+        <section class="container">
+          <input type="radio" class="radio" name="progress" value="five" id="five">
           <label for="five" class="label">5%</label>
 
-          <input type="radio" class="radio" name="progress" value="25" id="twentyfive" checked>
+          <input type="radio" class="radio" name="progress" value="twentyfive" id="twentyfive" checked>
           <label for="twentyfive" class="label">25%</label>
 
-          <input type="radio" class="radio" name="progress" value="50" id="fifty">
+          <input type="radio" class="radio" name="progress" value="fifty" id="fifty">
           <label for="fifty" class="label">50%</label>
 
-          <input type="radio" class="radio" name="progress" value="75" id="seventyfive">
+          <input type="radio" class="radio" name="progress" value="seventyfive" id="seventyfive">
           <label for="seventyfive" class="label">75%</label>
 
-          <input type="radio" class="radio" name="progress" value="100" id="onehundred">
+          <input type="radio" class="radio" name="progress" value="onehundred" id="onehundred">
           <label for="onehundred" class="label">100%</label>
 
           <div class="progress">
-            <div class="progress-bar progress"></div>
+            <div class="progress-bar"></div>
           </div>
-        </div>
+        </section>
 
-        <div class="container">
+        <section class="container">
            <div id="myProgress" class="hide progress">
                 <div id="myBar"></div>
             </div>
             <button onclick="move()">Click Me</button>
-        </div>
+        </section>
 
     </main>
 <script>
-function move() {
-  var elem = document.getElementById("myBar");
-  var width = 10;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 100) {
-      clearInterval(id);
-    } else {
-      width++;
-      elem.style.width = width + '%';
-      elem.innerHTML = width * 1  + '%';
+    function move() {
+        var elem = document.getElementById("myBar");
+        var width = 10;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= 100) {
+              clearInterval(id);
+            } else {
+              width++;
+              elem.style.width = width + '%';
+              elem.innerHTML = width * 1  + '%';
+            }
+          }
     }
-  }
-}
 </script>
 </body>
