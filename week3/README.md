@@ -19,8 +19,7 @@ Unfortunately not every browser supports the `<details>` attribute.
 
 This list seems to be a little outdated, because it also works on opera mini. But it doesn't work on Internet Explorer. If `<details>` doesn't work it will show the widget opened. Showing all the information. With CSS you can make hierarchy in the structure.
 
-<img src="img/opera.PNG" alt="Detail element working on Opera Mini" height="400px">
-<img src="img/ie-contact.JPG" alt="Detail element showing all the information in the widget" height="300px">
+<img src="img/opera.PNG" alt="Detail element working on Opera Mini" height="400px"><img src="img/ie-contact.JPG" alt="Detail element showing all the information in the widget" height="400px">
 
 
 ## Source
