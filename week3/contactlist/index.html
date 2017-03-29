@@ -6,105 +6,174 @@
 
    <style>
        body{
+           box-sizing: border-box;
            font-family: sans-serif;
            margin: 0;
            padding: 0;
        }
 
-       #index-D{
-         background-color: aqua;
+       header {
+           font-size: 0.7em;
+           background-color: aliceblue;
+           padding: 1em;
+           text-align: center;
        }
+
+       ul.list {
+           padding: 0;
+           list-style: none;
+           margin-top: 0;
+
+       }
+
+        /*  Alphabet  */
+       .element-sidebar {
+            display: flex;
+            flex-direction: column;
+            width: 10%;
+            align-items: center;
+       }
+
+        /*   name list    */
+       .element-content {
+            width: 90%;
+       }
+
+       .phonelist{
+           display: flex;
+           flex-direction: row-reverse;
+           justify-content: flex-end;
+           margin: 1em;
+       }
+
+       li > p {
+           background-color: lightgrey;
+           margin: 0;
+       }
+
+       .details{
+           border-bottom: 1px solid lightgray;
+           padding-bottom: 1em;
+           padding-top: 1em;
+       }
+
+       summary {
+            font-weight: 600;
+            margin-left: 0.5em;
+       }
+
+       summary::-webkit-details-marker {
+          display: none
+       }
+
+       .work{
+           border-left: 5px;
+           border-left-style: solid;
+           border-left-color: dodgerblue;
+       }
+
+       .family{ border-left: 5px;
+           border-left-style: solid;
+           border-left-color: goldenrod;
+       }
+
+       .friends{
+           border-left: 5px;
+           border-left-style: solid;
+           border-left-color: hotpink;
+       }
+
     </style>
 </head>
 <body>
     <main>
 <!--      <div class="element custom">-->
 
-        <header class="element-header">
+        <header>
             <input id="search" type="text" name="s" value="" placeholder="search" autocomplete="off">
             <h1>Contacts</h1>
         </header>
+        <section class="phonelist">
+            <section class="element-sidebar">
+                <a href="#index">#</a>
+                <a href="#index-A">A</a>
+                <a href="#index-B">B</a>
+                <a href="#index-C">C</a>
+                <a href="#index-D">D</a>
+                <a href="#index-E">E</a>
+                <a href="#index-F">F</a>
+                <a href="#index-G">G</a>
+                <a href="#index-H">H</a>
+                <a href="#index-I">I</a>
+                <a href="#index-J">J</a>
+                <a href="#index-K">K</a>
+                <a href="#index-L">L</a>
+                <a href="#index-M">M</a>
+                <a href="#index-N">N</a>
+                <a href="#index-O">O</a>
+                <a href="#index-P">P</a>
+                <a href="#index-Q">Q</a>
+                <a href="#index-R">R</a>
+                <a href="#index-S">S</a>
+                <a href="#index-T">T</a>
+                <a href="#index-U">U</a>
+                <a href="#index-V">V</a>
+                <a href="#index-W">W</a>
+                <a href="#index-X">X</a>
+                <a href="#index-Y">Y</a>
+                <a href="#index-Z">Z</a>
+            </section>
 
-        <section class="element-sidebar">
-            <a href="#index">#</a>
-            <a href="#index-A">A</a>
-            <a href="#index-B">B</a>
-            <a href="#index-C">C</a>
-            <a href="#index-D">D</a>
-            <a href="#index-E">E</a>
-            <a href="#index-F">F</a>
-            <a href="#index-G">G</a>
-            <a href="#index-H">H</a>
-            <a href="#index-I">I</a>
-            <a href="#index-J">J</a>
-            <a href="#index-K">K</a>
-            <a href="#index-L">L</a>
-            <a href="#index-M">M</a>
-            <a href="#index-N">N</a>
-            <a href="#index-O">O</a>
-            <a href="#index-P">P</a>
-            <a href="#index-Q">Q</a>
-            <a href="#index-R">R</a>
-            <a href="#index-S">S</a>
-            <a href="#index-T">T</a>
-            <a href="#index-U">U</a>
-            <a href="#index-V">V</a>
-            <a href="#index-W">W</a>
-            <a href="#index-X">X</a>
-            <a href="#index-Y">Y</a>
-            <a href="#index-Z">Z</a>
-        </section>
-
-        <section class="element-content">
+            <section class="element-content">
             <ul class="list">
                     <li id="index-A">
                          <p>A</p>
-                            <details>
+                            <details class="details work">
                                 <summary data-group="work">Amy Laudrie</summary>
-                                    <p>+1 (983) 411-2912</p>
-                                    <p>amylaudrie@gmail.com</p>
+                                    <a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a>
+                                    <a href="mailto:amylaudrie@gmail.com">amylaudrie@gmail.com</a>
                                     <p>443 Wolf Place, Faxon, South Dakota</p>
                             </details>
 
-                            <details>
+                            <details class="details family">
                                 <summary data-group="family">Ann Longo</summary>
-                                    <p>+1 (983) 411-2912</p>
-                                    <p>AnnLongo@gmail.com</p>
+                                    <a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a>
+                                    <a href="mailto:amylaudrie@gmail.com">AnnLongo@gmail.com</a>
                                     <p>443 Wolf Place, Faxon, South Dakota</p>
                             </details>
 
-                            <details>
+                            <details class="details family">
                                 <summary data-group="family">Anaya Lodil</summary>
-                                    <p>+1 (983) 411-2912</p>
-                                    <p>AnayaLodil@gmail.com</p>
+                                    <a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a>
+                                    <a href="mailto:amylaudrie@gmail.com">AnayaLodil@gmail.com</a>
                                     <p>443 Wolf Place, Faxon, South Dakota</p>
                             </details>
 
-                            <details>
+                            <details class="details work">
                                 <summary data-group="work">Andrea Mann</summary>
-                                    <p>+1 (983) 411-2912</p>
-                                    <p>AndreaMann@gmail.com</p>
+                                    <a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a>
+                                    <a href="mailto:amylaudrie@gmail.com">AndreaMann@gmail.com</a>
                                     <p>443 Wolf Place, Faxon, South Dakota</p>
                             </details>
 
-                            <details>
+                            <details class="details work">
                                 <summary data-group="work">Angelica Mavrick</summary>
-                                    <p>+1 (983) 411-2912</p>
-                                    <p>AngelicaMavrick@gmail.com</p>
+                                    <a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a>
+                                    <a href="mailto:amylaudrie@gmail.com">AngelicaMavrick@gmail.com</a>
                                     <p>443 Wolf Place, Faxon, South Dakota</p>
                             </details>
 
-                            <details>
+                            <details class="details family">
                                 <summary data-group="family">Anni Marnis</summary>
-                                    <p>+1 (983) 411-2912</p>
-                                    <p>AnniMarnis@gmail.com</p>
+                                    <a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a>
+                                    <a href="mailto:amylaudrie@gmail.com">AnniMarnis@gmail.com</a>
                                     <p>443 Wolf Place, Faxon, South Dakota</p>
                             </details>
 
-                            <details>
+                            <details class="details work ">
                                 <summary data-group="work">April Meiny</summary>
-                                    <p>+1 (983) 411-2912</p>
-                                    <p>AprilMeiny@gmail.com</p>
+                                    <a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a>
+                                    <a href="mailto:amylaudrie@gmail.com">AprilMeiny@gmail.com</a>
                                     <p>443 Wolf Place, Faxon, South Dakota</p>
                             </details>
                     </li>
@@ -112,38 +181,38 @@
 
                     <li id="index-B">
                          <p>B</p>
-                            <details>
+                            <details class="details work">
                                 <summary data-group="work">Benny Iridos</summary>
-                                    <p>+1 (983) 411-2912</p>
-                                    <p>BennyIridos@gmail.com</p>
+                                    <a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a>
+                                    <a href="mailto:amylaudrie@gmail.com">BennyIridos@gmail.com</a>
                                     <p>443 Wolf Place, Faxon, South Dakota</p>
                             </details>
 
-                            <details>
+                            <details class="details family">
                                 <summary data-group="family">Bill Doe</summary>
-                                    <p>+1 (983) 411-2912</p>
-                                    <p>BillDoe@gmail.com</p>
+                                    <a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a>
+                                    <a href="mailto:amylaudrie@gmail.com">BillDoe@gmail.com</a>
                                     <p>443 Wolf Place, Faxon, South Dakota</p>
                             </details>
 
-                            <details>
+                            <details class="details family">
                                 <summary data-group="family">Ben Doldy</summary>
-                                    <p>+1 (983) 411-2912</p>
-                                    <p>BenDoldy@gmail.com</p>
+                                    <a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a><a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a>
+                                    <a href="mailto:amylaudrie@gmail.com">BenDoldy@gmail.com</a>
                                     <p>443 Wolf Place, Faxon, South Dakota</p>
                             </details>
 
-                            <details>
+                            <details class="details work">
                                 <summary data-group="work">Brian Donson</summary>
-                                    <p>+1 (983) 411-2912</p>
-                                    <p>BrianDonson@gmail.com</p>
+                                    <a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a><a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a>
+                                    <a href="mailto:amylaudrie@gmail.com">BrianDonson@gmail.com</a>
                                     <p>443 Wolf Place, Faxon, South Dakota</p>
                             </details>
 
-                            <details>
+                            <details class="details work">
                                 <summary data-group="work">Briana Dorest</summary>
-                                    <p>+1 (983) 411-2912</p>
-                                    <p>BrianaDorest@gmail.com</p>
+                                    <a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a><a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a>
+                                    <a href="mailto:amylaudrie@gmail.com">BrianaDorest@gmail.com</a>
                                     <p>443 Wolf Place, Faxon, South Dakota</p>
                             </details>
 
@@ -151,60 +220,61 @@
 
                     <li id="index-C">
                              <p>C</p>
-                                <details>
+                                <details class="details friends">
                                     <summary data-group="friends">Clark Graver</summary>
-                                        <p>+1 (983) 411-2912</p>
-                                        <p>ClarkGraver@gmail.com</p>
+                                        <a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a>
+                                        <a href="mailto:amylaudrie@gmail.com">ClarkGraver@gmail.com</a>
                                         <p>443 Wolf Place, Faxon, South Dakota</p>
                                 </details>
                     </li>
 
                     <li id="index-D">
                              <p>D</p>
-                                <details>
+                                <details class="details friends">
                                     <summary data-group="friends">Danny Perie</summary>
-                                        <p>+1 (983) 411-2912</p>
-                                        <p>DannyPerie@gmail.com</p>
+                                        <a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a>
+                                        <a href="mailto:amylaudrie@gmail.com">DannyPerie@gmail.com</a>
                                         <p>443 Wolf Place, Faxon, South Dakota</p>
                                 </details>
                     </li>
 
                     <li id="index-J">
                              <p>J</p>
-                                <details>
+                                <details class="details family">
                                     <summary data-group="family">John Doe</summary>
-                                        <p>+1 (983) 411-2912</p>
-                                        <p>JohnDoe@gmail.com</p>
+                                        <a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a>
+                                        <a href="mailto:amylaudrie@gmail.com">JohnDoe@gmail.com</a>
                                         <p>443 Wolf Place, Faxon, South Dakota</p>
                                 </details>
                     </li>
 
                     <li id="index-L">
                              <p>L</p>
-                                <details>
+                                <details class="details work">
                                     <summary data-group="work">Lucy Fer</summary>
-                                        <p>+1 (983) 411-2912</p>
-                                        <p>LucyFer@gmail.com</p>
+                                        <a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a>
+                                        <a href="mailto:amylaudrie@gmail.com">LucyFer@gmail.com</a>
                                         <p>443 Wolf Place, Faxon, South Dakota</p>
                                 </details>
                     </li>
 
                     <li id="index-M">
                              <p>M</p>
-                                <details>
+                                <details class="details work">
                                     <summary data-group="work">Megan Rize</summary>
-                                        <p>+1 (983) 411-2912</p>
-                                        <p>MeganRize@gmail.com</p>
+                                        <a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a>
+                                        <a href="mailto:amylaudrie@gmail.com">MeganRize@gmail.com</a>
                                         <p>443 Wolf Place, Faxon, South Dakota</p>
                                 </details>
-                                <details>
+                                <details class="details work">
                                     <summary data-group="work">Mike Ferg</summary>
-                                        <p>+1 (983) 411-2912</p>
-                                        <p>mikeferg@mail.com</p>
+                                        <a href="tel:+1 (983) 411-2912">+1 (983) 411-2912</a>
+                                        <a href="mailto:amylaudrie@gmail.com">mikeferg@mail.com</a>
                                         <p>443 Wolf Place, Faxon, South Dakota</p>
                                 </details>
                     </li>
               </ul>
+        </section>
         </section>
 
 <!--        </div>-->
