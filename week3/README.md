@@ -6,11 +6,13 @@ This demo is a contact list, in which you can search by letter. It's build with 
 
 - [HTML](#html)
 - [CSS](#css)
+- [JS](#js)
 
 ## Nice to add
 - Google Maps by clicking the adress
 
 ---
+
 ## [HTML](#html)
 For HTML I used the `<details>` element. This element is used as widget which the user can use to retrieve information.
 
@@ -35,20 +37,33 @@ This list seems to be a little outdated, because it also works on opera mini. Bu
 - [HTML5 doctor](http://html5doctor.com/the-details-and-summary-elements/)
 
 ---
+
 ## [CSS](#css)
 `position: sticky` is a CSS attributes in which you can fix an element to the viewport. In my case I used it for the letters that indicate where you are in the contact list. For example: When scrolling down the list from names with an A to names with a B, the heading A will stay in the viewport until names with the B are reached.
 
 <img src="img/sticky.png" alt="Letter at the top of the viewport" height="400px">
 
-Unfortunately not every browser supports `position: sticky`.
+Unfortunately not every browser supports `position: sticky`. Especially mobile browsers don't work with `position: sticky`. Also IE doesn't work
 <img src="img/ciu-sticky.png" alt="Overview browser support" height="400px">
 
+
+## Extra CSS
+- `overflow`: to scroll the list
 
 ## Source
 - [MDN](https://developer.mozilla.org/en/docs/Web/CSS/position#Sticky_positioning)
 - [Can I use?](http://caniuse.com/#search=stick)
 
 
+
+---
+
+## [JS](#js)
+
+## Source
+- [W3Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_list)
+- [Pali Madra](http://codepen.io/palimadra/pen/uoJnl?editors=1010)
+- [W3Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_list)
 
 
 

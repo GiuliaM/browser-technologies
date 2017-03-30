@@ -34,6 +34,10 @@
             align-items: center;
        }
 
+       section.element-sidebar a:focus, section.element-sidebar a:hover{
+           font-size: 2em;
+       }
+
         /*   name list    */
        .element-content {
             width: 90%;
@@ -99,11 +103,9 @@
         <header>
             <h1>Contacts</h1>
         </header>
-<!--
         <section>
-                <input id="search" type="text" name="s" value="" placeholder="search" autocomplete="off">
+                <input id="search" type="text" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
             </section>
--->
         <section class="phonelist">
             <section class="element-sidebar">
                 <a href="#index-A">A</a>
@@ -135,7 +137,7 @@
             </section>
 
             <section class="element-content">
-            <ul class="list">
+            <ul id="list" class="list">
                     <li id="index-A">
                          <p>A</p>
                             <details class="details work">
@@ -397,6 +399,23 @@
     </main>
 
 <script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("search");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("list");
+    li = ul.getElementsByTagName("details");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("summary")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
 
 </script>
 
