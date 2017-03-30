@@ -13,8 +13,7 @@
        }
 
        header {
-           font-size: 0.7em;
-           background-color: aliceblue;
+           background-color: lightskyblue;
            padding: 1em;
            text-align: center;
        }
@@ -23,7 +22,8 @@
            padding: 0;
            list-style: none;
            margin-top: 0;
-
+           overflow: auto;
+           height: 100vh;
        }
 
         /*  Alphabet  */
@@ -43,8 +43,13 @@
            display: flex;
            flex-direction: row-reverse;
            justify-content: flex-end;
-           margin: 1em;
+           margin: 0;
        }
+
+       h1 {
+           margin: 0;
+           font-size: 1.3em;
+        }
 
        li > p {
            background-color: lightgrey;
@@ -92,12 +97,15 @@
 <!--      <div class="element custom">-->
 
         <header>
-            <input id="search" type="text" name="s" value="" placeholder="search" autocomplete="off">
             <h1>Contacts</h1>
         </header>
+<!--
+        <section>
+                <input id="search" type="text" name="s" value="" placeholder="search" autocomplete="off">
+            </section>
+-->
         <section class="phonelist">
             <section class="element-sidebar">
-                <a href="#index">#</a>
                 <a href="#index-A">A</a>
                 <a href="#index-B">B</a>
                 <a href="#index-C">C</a>
