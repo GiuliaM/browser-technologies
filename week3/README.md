@@ -26,11 +26,11 @@ This list seems to be a little outdated, because it also works on opera mini. Bu
 
 <img src="img/opera.PNG" alt="Detail element working on Opera Mini" height="400px"><img src="img/ie-contact.JPG" alt="Detail element showing all the information in the widget" height="400px">
 
-## Extra HTML
+### Extra HTML
 - `a href=tel:`: by clicking on the number it initiates a phonecall
 - `a href=mailto:`: by clicking on email it initiates a mail
 
-## Source
+### Source
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
 - [Can I use?](http://caniuse.com/#search=detail)
 - [HTML5 doctor](http://html5doctor.com/the-details-and-summary-elements/)
@@ -46,10 +46,10 @@ Unfortunately not every browser supports `position: sticky`. Especially mobile b
 <img src="img/ciu-sticky.png" alt="Overview browser support" height="400px">
 
 
-## Extra CSS
+### Extra CSS
 - `overflow`: to scroll the list
 
-## Source
+### Source
 - [MDN](https://developer.mozilla.org/en/docs/Web/CSS/position#Sticky_positioning)
 - [Can I use?](http://caniuse.com/#search=stick)
 
@@ -59,7 +59,7 @@ Unfortunately not every browser supports `position: sticky`. Especially mobile b
 
 ## [JS](#js)
 
-## Source
+### Source
 - [W3Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_list)
 - [Pali Madra](http://codepen.io/palimadra/pen/uoJnl?editors=1010)
 - [W3Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_list)
@@ -70,6 +70,7 @@ Unfortunately not every browser supports `position: sticky`. Especially mobile b
 ---
 
 ## [Wishlist](#wishlist)
+- Adding icons to number, address and
 - Google Maps by clicking the adress
 - Make the alphabet interactive with touch (like the iPhone contacts app has)
 

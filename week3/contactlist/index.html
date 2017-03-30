@@ -12,8 +12,9 @@
            padding: 0;
        }
 
+    /*  Header */
        header {
-           background-color: lightskyblue;
+           background-color: cornflowerblue;
            text-align: center;
            height: 15vh;
            display: flex;
@@ -22,17 +23,18 @@
            justify-content: center;
        }
 
-       .searchBar{
-           display: none;
-       }
+       h1 {
+           margin: 0;
+           font-size: 1.3em;
+           font-weight: 500;
+        }
 
-       ul.list {
-           padding: 0;
-           list-style: none;
-           margin-bottom: 0;
-           margin-top: 0;
-           overflow: auto;
-           height: 85vh;
+       input {
+            font-size: 1em;
+        }
+
+       .hide{
+           display: none;
        }
 
         /*  Alphabet  */
@@ -46,13 +48,28 @@
        .element-sidebar a{
            color: black;
            text-decoration: none;
+           font-weight: 100;
        }
 
        .element-sidebar a:focus, .element-sidebar a:hover{
-           font-size: 2em;
+           font-size: 1.5em;
+           font-weight: 700;
+       }
+
+       section{
+           margin-bottom: 0;
        }
 
         /*   name list    */
+       ul.list {
+           padding: 0;
+           list-style: none;
+           margin-bottom: 0;
+           margin-top: 0;
+           overflow: auto;
+           height: 85vh;
+       }
+
        .element-content {
             width: 90%;
        }
@@ -65,19 +82,12 @@
            height: 85vh;
        }
 
-       section{
-           margin-bottom: 0;
-       }
-
-       h1 {
-           margin: 0;
-           font-size: 1.3em;
-           font-weight: 500;
-        }
 
        li > p {
            background-color: lightgrey;
            margin: 0;
+           padding-left: 4px;
+           padding: 3px;
            position: -webkit-sticky;
            position: sticky;
            top: -1px;
@@ -94,8 +104,12 @@
             margin-bottom: 0.5em;
         }
 
-       summary {
+       details[open] summary {
             font-weight: 600;
+        }
+
+       summary {
+            font-weight: 400;
             margin-left: 0.5em;
        }
 
@@ -103,9 +117,33 @@
           display: none
        }
 
-       details a, details p {
-            padding-left: 1.3em;
-            margin-bottom: 0.5em;
+
+       @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: scaleY(0);
+            }
+            100% {
+                opacity: 1;
+                transform: scaleY(1);
+            }
+        }
+
+       details[open] p, details[open] a {
+            transform-origin:  top;
+            animation-name: fadeInDown;
+            animation-duration: 0.5s;
+        }
+
+        details {
+          background: white;
+        }
+
+        /* Style the summary when details box is open */
+        details[open] {
+            background: #F3F0F2;
+            color: #333;
+            animation: colorSwitch 1s;
         }
 
        .work{
@@ -125,7 +163,17 @@
            border-left-color: hotpink;
        }
 
+       @keyframes colorSwitch {
+          0% {
+            background-color: white;
+          }
+          100% {
+            background-color: #F3F0F2;
+          }
+        }
+
     </style>
+
 </head>
 <body>
     <main>
@@ -134,8 +182,8 @@
         <header>
             <section>
                 <h1>Contacts</h1>
-                <section class="searchBar">
-                    <input id="search" type="text" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+                <section id="searchSection" class="hide">
+                    <input id="search" type="text" onkeyup="filterFunction()" placeholder="Search for names.." title="Type in a name">
                 </section>
             </section>
         </header>
@@ -433,7 +481,8 @@
     </main>
 
 <script>
-function myFunction() {
+
+function filterFunction() {
     var input, filter, ul, li, a, i;
     input = document.getElementById("search");
     filter = input.value.toUpperCase();
@@ -449,7 +498,24 @@ function myFunction() {
         }
     }
 }
+
+
 </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+    console.log("DOM fully loaded and parsed");
+             var search = document.getElementById("searchSection")
+                if (event === true) {
+                    search.classList.add("hide");
+                    console.log('het werkt');
+
+                } else {
+                    search.classList.remove("hide");
+                    console.log('blablabla');
+                }
+
+  });
 
 </script>
 
