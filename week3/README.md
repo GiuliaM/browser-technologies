@@ -4,12 +4,11 @@
 
 This demo is a contact list, in which you can search by letter. It's build with the idea of progressive enhancement. Starting with HTML and enhancing it with CSS and Javascript.
 
+## Index
 - [HTML](#html)
 - [CSS](#css)
 - [JS](#js)
-
-## Nice to add
-- Google Maps by clicking the adress
+- [Wishlist](#wishlist)
 
 ---
 
@@ -68,11 +67,11 @@ Unfortunately not every browser supports `position: sticky`. Especially mobile b
 
 
 
+---
 
-
-
-
-
+## [Wishlist](#wishlist)
+- Google Maps by clicking the adress
+- Make the alphabet interactive with touch (like the iPhone contacts app has)
 
 
 

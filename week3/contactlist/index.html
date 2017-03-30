@@ -14,16 +14,25 @@
 
        header {
            background-color: lightskyblue;
-           padding: 1em;
            text-align: center;
+           height: 15vh;
+           display: flex;
+           align-items: center;
+           flex-direction: column;
+           justify-content: center;
+       }
+
+       .searchBar{
+           display: none;
        }
 
        ul.list {
            padding: 0;
            list-style: none;
+           margin-bottom: 0;
            margin-top: 0;
            overflow: auto;
-           height: 100vh;
+           height: 85vh;
        }
 
         /*  Alphabet  */
@@ -34,7 +43,12 @@
             align-items: center;
        }
 
-       section.element-sidebar a:focus, section.element-sidebar a:hover{
+       .element-sidebar a{
+           color: black;
+           text-decoration: none;
+       }
+
+       .element-sidebar a:focus, .element-sidebar a:hover{
            font-size: 2em;
        }
 
@@ -48,16 +62,23 @@
            flex-direction: row-reverse;
            justify-content: flex-end;
            margin: 0;
+           height: 85vh;
+       }
+
+       section{
+           margin-bottom: 0;
        }
 
        h1 {
            margin: 0;
            font-size: 1.3em;
+           font-weight: 500;
         }
 
        li > p {
            background-color: lightgrey;
            margin: 0;
+           position: -webkit-sticky;
            position: sticky;
            top: -1px;
        }
@@ -68,6 +89,11 @@
            padding-top: 1em;
        }
 
+       details a, details p {
+            padding-left: 1.3em;
+            margin-bottom: 0.5em;
+        }
+
        summary {
             font-weight: 600;
             margin-left: 0.5em;
@@ -77,9 +103,14 @@
           display: none
        }
 
+       details a, details p {
+            padding-left: 1.3em;
+            margin-bottom: 0.5em;
+        }
+
        .work{
            border-left: 5px;
-           border-left-style: solid;
+           border-left-style: double;
            border-left-color: dodgerblue;
        }
 
@@ -101,11 +132,14 @@
 <!--      <div class="element custom">-->
 
         <header>
-            <h1>Contacts</h1>
-        </header>
-        <section>
-                <input id="search" type="text" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+            <section>
+                <h1>Contacts</h1>
+                <section class="searchBar">
+                    <input id="search" type="text" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+                </section>
             </section>
+        </header>
+
         <section class="phonelist">
             <section class="element-sidebar">
                 <a href="#index-A">A</a>
