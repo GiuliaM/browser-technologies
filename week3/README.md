@@ -53,7 +53,7 @@ Besides trying to make it look pretty, I was also keeping in mind that the color
 <img src="img/deuteranomaly.png" alt="Deuteranomaly" width="100px"><img src="img/monochromacy.png" alt="monochromacy" width="100px"><img src="img/protanomaly.png" alt="protanomaly" width="100px"><img src="img/tritanomaly.png" alt="tritanomaly" width="100px">
 
 And ofcourse the color ratio is also important and for that I used Lea Verou's tool:
-<img src="img/ratio.png" alt="Color ratio header" height="400px"><img src="img/ratio1.png" alt="color ratio alphabet" height="400px">
+<img src="img/ratio.png" alt="Color ratio header" height="200px"><img src="img/ratio1.png" alt="color ratio alphabet" height="200px">
 
 
 ### Source
