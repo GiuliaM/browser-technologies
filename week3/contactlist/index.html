@@ -30,8 +30,13 @@
         }
 
        input {
-            font-size: 1em;
-        }
+           font-size: 1em;
+           border-radius: 4px;
+           font-family: sans-serif;
+           border-style: none;
+           padding: 0.2em;
+           font-weight: 300;
+       }
 
        .hide{
            display: none;
@@ -99,9 +104,14 @@
            padding-top: 1em;
        }
 
+       details:hover {
+           background-color: aliceblue;
+       }
+
        details a, details p {
             padding-left: 1.3em;
             margin-bottom: 0.5em;
+            text-decoration: none;
         }
 
        details[open] summary {
@@ -118,10 +128,10 @@
        }
 
 
-       @keyframes fadeInDown {
+       @keyframes fadeIn {
             0% {
                 opacity: 0;
-                transform: scaleY(0);
+                transform: scaleY(1);
             }
             100% {
                 opacity: 1;
@@ -131,8 +141,8 @@
 
        details[open] p, details[open] a {
             transform-origin:  top;
-            animation-name: fadeInDown;
-            animation-duration: 0.5s;
+            animation-name: fadeIn;
+            animation-duration: 1.5s;
         }
 
         details {
@@ -155,12 +165,6 @@
        .family{ border-left: 5px;
            border-left-style: solid;
            border-left-color: goldenrod;
-       }
-
-       .friends{
-           border-left: 5px;
-           border-left-style: solid;
-           border-left-color: hotpink;
        }
 
        @keyframes colorSwitch {
@@ -504,19 +508,18 @@ function filterFunction() {
 
 <script>
     document.addEventListener("DOMContentLoaded", function(event) {
-    console.log("DOM fully loaded and parsed");
-             var search = document.getElementById("searchSection")
-                if (event === true) {
-                    search.classList.add("hide");
-                    console.log('het werkt');
+        console.log("DOM fully loaded and parsed");
+        var search = document.getElementById("searchSection")
+        if (event === true) {
+            search.classList.add("hide");
+            console.log('het werkt');
 
-                } else {
-                    search.classList.remove("hide");
-                    console.log('blablabla');
-                }
+        } else {
+            search.classList.remove("hide");
+            console.log('blablabla');
+        }
 
   });
-
 </script>
 
 </body>
