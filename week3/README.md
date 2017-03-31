@@ -8,6 +8,7 @@ This demo is a contact list, in which you can search by letter. It's build with 
 - [HTML](#html)
 - [CSS](#css)
 - [JS](#js)
+- [Other Browsers](#other-browsers)
 - [Wishlist](#wishlist)
 
 ---
