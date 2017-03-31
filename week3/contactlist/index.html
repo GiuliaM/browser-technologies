@@ -139,12 +139,6 @@
             }
         }
 
-       details[open] p, details[open] a {
-            transform-origin:  top;
-            animation-name: fadeIn;
-            animation-duration: 1.5s;
-        }
-
         details {
           background: white;
         }
@@ -178,6 +172,13 @@
           }
         }
 
+       @media (min-width: 65em) {
+           details[open] p, details[open] a {
+                transform-origin:  top;
+                animation-name: fadeIn;
+                animation-duration: 1.5s;
+            }
+       }
 
     </style>
 
