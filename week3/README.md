@@ -26,6 +26,8 @@ This list seems to be a little outdated, because it also works on opera mini. Bu
 
 <img src="img/opera.PNG" alt="Detail element working on Opera Mini" height="400px"><img src="img/ie-contact.JPG" alt="Detail element showing all the information in the widget" height="400px">
 
+It is also possible to tab through the whole website. This way users that aren't able to use a mouse (or choose not to) can acces the page.
+
 ### Extra HTML
 - `a href=tel:`: by clicking on the number it initiates a phonecall
 - `a href=mailto:`: by clicking on email it initiates a mail
@@ -44,7 +46,6 @@ This list seems to be a little outdated, because it also works on opera mini. Bu
 
 Unfortunately not every browser supports `position: sticky`. Especially mobile browsers don't work with `position: sticky`. Also IE doesn't work
 <img src="img/ciu-sticky.png" alt="Overview browser support" height="400px">
-
 
 ### Extra CSS
 - `overflow`: to scroll the list
