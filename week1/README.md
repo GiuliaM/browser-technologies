@@ -68,4 +68,5 @@ There are a few things you can do when JavaScript breaksdown:
 - You can design your website with progressive enhancement (HTML first, CSS second, JS third)
 - You can run the JavaScript in a server (when JavaScript is clientside it runs through the browser that can block Javascript. JavaScript server-side is loaded in the server and it won't get blocked by the browser)
 - Make sure that when JavaScript is turned off the performance of the website doesn't get influenced in a big way.
+- Use JavaScript to enhance your website, not to make your website
 
