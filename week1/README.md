@@ -53,7 +53,7 @@ Where SNSbank didn't do so well with the images, they handle javascript great. E
 <img src="img/../oef1/snsforma.png" alt="Form with JavaScript" height="300px"><img src="img/../oef1/sns-formb.png" alt="Form without JavaScript" height="300px">
 
 What also got worse was the loading time. If JavaScript is enabled it takes 1.96 seconds to load the entire page. If JavaScript is disabled it takes 23.18(!) seconds to load the page. It seems that gifs are the cause of that.
-<img src="img/../oef1/snsspeed.png" alt="Loading time with JavaScript" height="400px"><img src="img/../oef1/speeda.png" alt="Loading time without JavaScript" height="400px">
+<img src="img/../oef1/snsspeed.png" alt="Loading time with JavaScript" height="400px"><img src="img/../oef1/speedc.png" alt="Loading time without JavaScript" height="400px">
 
 De doorverkoper also doesn't seem to have a lot of problems. De header image is missing and you can't submit the contactform.
 
