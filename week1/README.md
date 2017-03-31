@@ -47,22 +47,22 @@ I went to the same websites:
 - Youtube
 
 Pinterest doesn't function without JavaScript.
-<img src="img/../oef1/Pinjs.png" alt="Pinterest malfunction JavaScript" height="200px">
+<img src="img/../oef1/Pinjs.png" alt="Pinterest malfunction JavaScript" height="400px">
 
 Where SNSbank didn't do so well with the images, they handle javascript great. Everything works on that page, except the tool to calculate (probably a tool made with javascript) and some forms.
-<img src="img/../oef1/snsforma.png" alt="Form with JavaScript" height="200px"><img src="img/../oef1/sns-formb.png" alt="Form without JavaScript" height="200px">
+<img src="img/../oef1/snsforma.png" alt="Form with JavaScript" height="400px"><img src="img/../oef1/sns-formb.png" alt="Form without JavaScript" height="400px">
 
 What also got worse was the loading time. If JavaScript is enabled it takes 1.96 seconds to load the entire page. If JavaScript is disabled it takes 23.18(!) seconds to load the page. It seems that gifs are the cause of that.
-<img src="img/../oef1/snsspeed.png" alt="Loading time with JavaScript" height="200px"><img src="img/../oef1/speeda.png" alt="Loading time without JavaScript" height="200px">
+<img src="img/../oef1/snsspeed.png" alt="Loading time with JavaScript" height="400px"><img src="img/../oef1/speeda.png" alt="Loading time without JavaScript" height="400px">
 
 De doorverkoper also doesn't seem to have a lot of problems. De header image is missing and you can't submit the contactform.
-<img src="img/../oef1/ddjs.png" alt="De doorverkoper without JavaScript" height="200px">
+<img src="img/../oef1/ddjs.png" alt="De doorverkoper without JavaScript" height="400px">
 
 At the Youtube website you can see the videos on the homepage above the fold. If you scroll down to other sections like Music, you won't be able to see the image and you won't be able to click on view more items.
-<img src="img/../oef1/ytjs.png" alt="Youtube without JavaScript" height="200px">
+<img src="img/../oef1/ytjs.png" alt="Youtube without JavaScript" height="400px">
 
 When you actually click on a video you won't be able to do anything.
-<img src="img/../oef1/ytvid.png" alt="Youtube without JavaScript video page" height="200px">
+<img src="img/../oef1/ytvid.png" alt="Youtube without JavaScript video page" height="400px">
 
 ### solutions
 There are a few things you can do when JavaScript breaksdown:
