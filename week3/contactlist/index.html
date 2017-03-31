@@ -127,18 +127,6 @@
           display: none;
        }
 
-
-       @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: scaleY(1);
-            }
-            100% {
-                opacity: 1;
-                transform: scaleY(1);
-            }
-        }
-
         details {
           background: white;
         }
@@ -178,6 +166,18 @@
                 animation-name: fadeIn;
                 animation-duration: 1.5s;
             }
+
+           @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: scaleY(1);
+            }
+            100% {
+                opacity: 1;
+                transform: scaleY(1);
+            }
+        }
+
        }
 
     </style>
