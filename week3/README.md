@@ -82,6 +82,15 @@ The filter doesn't work without javascipt. So when javascript is disabled the se
 
 ---
 
+## [Other Browsers](#other-browsers)
+The following browsers work good:
+- Safari
+- Chrome
+- Firefox
+- Opera Mini
+
+---
+
 I would of liked to have more time for this project, because there are still a lot of cool things you can do with this demo. So here is my wishlist:
 
 ## [Wishlist](#wishlist)
