@@ -16,15 +16,19 @@ I went to a few pages I visted right before the assignment:
 - Youtube
 
 Pinterest uses background colors. If the image isn't available, you'll get an colored placeholder. I think this is a good solution, because you can see that images are missing, but it isn't filled with a lot of white space. Alt text can be a big help here.
+
 <img src="img/../oef1/pin.png" alt="Pinterest" height="200px">
 
 Unlike the snsbank website. If they lose their images you almost get a white page.
+
 <img src="img/../oef1/snsb.png" alt="Sns website" height="200px"><img src="img/../oef1/snsa.png" alt="Sns website without images" height="200px">
 
 De doorverkoper (built by me) is a WordPress website. If the header falls away you get an background color. If the logo falls away you can see a broken link. This could at least be fixed with a `min-height` and an alt text should be available.
+
 <img src="img/../oef1/ddb.png" alt="De doorverkoper" height="200px"><img src="img/../oef1/dda.png" alt="De doorverkoper" height="200px">
 
 A good example is Youtube, they use a `min-height` for their broken links. They could add an alt text to clarify the broken link.
+
 <img src="img/../oef1/yt.png" alt="Youtube" height="200px">
 
 
