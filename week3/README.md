@@ -50,6 +50,7 @@ Unfortunately not every browser supports `position: sticky`. Especially mobile b
 - `overflow`: to scroll the list
 
 Besides trying to make it look pretty, I was also keeping in mind that the colorblind will also need to be able to use this. So I tried to give more clarification by adding left-borders in different styles. This is for showing in wich group those contacts are sorted. Trying to understand the colorblind I needed to see like the colorblind. I used Sim-Daltonism to do this:
+
 <img src="img/deuteranomaly.png" alt="Deuteranomaly" width="200px"><img src="img/monochromacy.png" alt="monochromacy" width="200px"><img src="img/protanomaly.png" alt="protanomaly" width="200px"><img src="img/tritanomaly.png" alt="tritanomaly" width="200px">
 
 And ofcourse the color ratio is also important and for that I used Lea Verou's tool:
