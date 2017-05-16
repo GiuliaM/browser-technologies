@@ -52,12 +52,13 @@
         }
 
         .hide {
-/*           display: none;*/
-            visibility: hidden;
+           display: none;
+/*            visibility: hidden;*/
         }
 
         .show {
-            visibility: visible;
+            display: block;
+/*            visibility: visible;*/
         }
 
         /*  Alphabet  */
@@ -208,7 +209,7 @@
             <section>
                 <h1>Contacts</h1>
                 <section id="searchSection" class="hide">
-                    <input id="search" class="hide" type="text" onkeyup="filterFunction()" placeholder="Search for names.." title="Type in a name">
+                    <input id="search" type="text" onkeyup="filterFunction()" placeholder="Search for names.." title="Type in a name">
                 </section>
             </section>
         </header>
@@ -526,16 +527,9 @@ function filterFunction() {
 
 <script>
     window.onload = function(event) {
-
-//    document.addEventListener("DOMContentLoaded", function(event) {
-        console.log(event);
-        console.log("DOM fully loaded and parsed");
-        var search = document.getElementById("search");
-
+        var search = document.getElementById("searchSection");
 
         search.attributes['class'].nodeValue = "show";
-
-//  });
     };
 </script>
 
