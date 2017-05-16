@@ -528,17 +528,13 @@ function filterFunction() {
     window.onload = function(event) {
 
 //    document.addEventListener("DOMContentLoaded", function(event) {
+        console.log(event);
         console.log("DOM fully loaded and parsed");
         var search = document.getElementById("search");
 
-        if (event == true) {
-            search.attributes['class'].nodeValue = "hide";
-            console.log('het werkt');
 
-        } else {
-            search.attributes['class'].nodeValue = "show";
-            console.log('blablabla');
-        }
+        search.attributes['class'].nodeValue = "show";
+
 //  });
     };
 </script>
