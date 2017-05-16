@@ -515,7 +515,7 @@ function filterFunction() {
     li = ul.getElementsByTagName("details");
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("summary")[0];
-        if (a.innerText.toUpperCase().indexOf(filter) > -1) {
+        if (a.textContent.toUpperCase().indexOf(filter) > -1) {
             li[i].style.display = "";
         } else {
             li[i].style.display = "none";
