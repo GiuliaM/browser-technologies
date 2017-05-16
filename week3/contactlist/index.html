@@ -207,8 +207,8 @@
         <header>
             <section>
                 <h1>Contacts</h1>
-                <section id="searchSection">
-                    <input id="search" class="hide" type="text" onkeyup="filterFunction()" placeholder="Search for names.." title="Type in a name">
+                <section id="searchSection" class="hide">
+                    <input id="search" type="text" onkeyup="filterFunction()" placeholder="Search for names.." title="Type in a name">
                 </section>
             </section>
         </header>
@@ -515,7 +515,8 @@ function filterFunction() {
     li = ul.getElementsByTagName("details");
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("summary")[0];
-        if (a.textContent.toUpperCase().indexOf(filter) > -1) {
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            console.log(a.attributes);
             li[i].style.display = "";
         } else {
             li[i].style.display = "none";
@@ -526,7 +527,7 @@ function filterFunction() {
 
 <script>
     window.onload = function(event) {
-        var search = document.getElementById("search");
+        var search = document.getElementById("searchSection");
 
         search.attributes['class'].nodeValue = "show";
     };
