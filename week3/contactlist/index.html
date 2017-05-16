@@ -502,7 +502,6 @@ function filterFunction() {
             li[i].style.display = "";
         } else {
             li[i].style.display = "none";
-
         }
     }
 }
@@ -511,9 +510,12 @@ function filterFunction() {
 </script>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
+    window.onload = function(event) {
+
+//    document.addEventListener("DOMContentLoaded", function(event) {
         console.log("DOM fully loaded and parsed");
         var search = document.getElementById("searchSection")
+
         if (event === true) {
             search.classList.add("hide");
             console.log('het werkt');
@@ -522,8 +524,8 @@ function filterFunction() {
             search.classList.remove("hide");
             console.log('blablabla');
         }
-
-  });
+//  });
+    };
 </script>
 
 </body>
