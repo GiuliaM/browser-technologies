@@ -3,141 +3,147 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
     <title>Contact list</title>
-    <script type="text/javascript">
-     document.createElement('header');
-     document.createElement('nav');
-     document.createElement('menu');
-     document.createElement('section');
-     document.createElement('article');
-     document.createElement('aside');
-     document.createElement('footer');
+    <script type="text/javascript"> //Adds HTML5 Elements to IE8
+        // http://stackoverflow.com/questions/289225/does-internet-explorer-8-support-html-5
+         document.createElement('header');
+         document.createElement('nav');
+         document.createElement('menu');
+         document.createElement('section');
+         document.createElement('article');
+         document.createElement('aside');
+         document.createElement('footer');
     </script>
-   <style type="text/css">
-       body{
+       <style type="text/css">
+        body{
            box-sizing: border-box;
            font-family: sans-serif;
            margin: 0;
            padding: 0;
-       }
+        }
 
-    /*  Header */
-       header {
+        /*  Header */
+        header {
            background-color: #6495ED;
            text-align: center;
            height: 15vh;
            display: block;
-/*           display: flex;*/
+           display: flex;
            top: 50%;
            bottom: 50%;
            align-items: center;
            flex-direction: column;
            justify-content: center;
-       }
+        }
 
-       h1 {
+        h1 {
            margin: 0;
            font-size: 1.3em;
            font-weight: 500;
            padding-top: 1em;
         }
 
-       input {
+        input {
            font-size: 1em;
            border-radius: 4px;
            font-family: sans-serif;
            border-style: none;
            padding: 0.2em;
            font-weight: 300;
-       }
+        }
 
-       .hide{
-           display: none;
-       }
+        .hide {
+/*           display: none;*/
+            visibility: hidden;
+        }
+
+        .show {
+            visibility: visible;
+        }
 
         /*  Alphabet  */
-       .element-sidebar {
+        .element-sidebar {
             display: flex;
             flex-direction: column;
             width: 10%;
             align-items: center;
-       }
+        }
 
-       .element-sidebar a{
+        .element-sidebar a {
            color: black;
            text-decoration: none;
            font-weight: 100;
-       }
+        }
 
-       .element-sidebar a:focus, .element-sidebar a:hover{
+        .element-sidebar a:focus, .element-sidebar a:hover {
            font-size: 1.5em;
            font-weight: 700;
-       }
+        }
 
-       section{
+        section {
            margin-bottom: 0;
-       }
+        }
 
         /*   name list    */
-       ul.list {
+        ul.list {
            padding: 0;
            list-style: none;
            margin-bottom: 0;
            margin-top: 0;
            overflow: auto;
            height: 85vh;
-       }
+        }
 
-       .element-content {
+        .element-content {
             width: 90%;
-       }
+        }
 
-       .phonelist{
+        .phonelist {
            display: flex;
            flex-direction: row-reverse;
            justify-content: flex-end;
            margin: 0;
            height: 85vh;
-       }
+        }
 
 
-       li > p {
+        li > p {
            background-color: lightgrey;
            margin: 0;
            padding-left: 4px;
            padding: 3px;
-/*           position: -webkit-sticky;*/
+        /*           position: -webkit-sticky;*/
            position: sticky;
            top: -1px;
-       }
+        }
 
-       .details{
+        .details {
            border-bottom: 1px solid lightgray;
            padding-bottom: 1em;
            padding-top: 1em;
-       }
+        }
 
-       details:hover {
+        details:hover {
            background-color: aliceblue;
-       }
+        }
 
-       details a, details p {
+        details a, details p {
             padding-left: 1.3em;
             margin-bottom: 0.5em;
             text-decoration: none;
         }
 
-       details[open] summary {
+        details[open] summary {
             font-weight: 600;
         }
 
-       summary {
+        summary {
             font-weight: 400;
             margin-left: 0.5em;
-       }
+        }
 
-       summary::-webkit-details-marker {
+        summary::-webkit-details-marker {
           display: none;
-       }
+        }
 
         details {
           background: white;
@@ -150,20 +156,20 @@
             animation: colorSwitch 1s;
         }
 
-       .work{
+        .work {
            border-left: 5px;
            border-left-style: double;
            border-left-color: dodgerblue;
-       }
+        }
 
-       .family{ border-left: 5px;
+        .family { border-left: 5px;
            border-left-style: solid;
            border-left-color: goldenrod;
-       }
+        }
 
 
 
-       @keyframes colorSwitch {
+        @keyframes colorSwitch {
           0% {
             background-color: white;
           }
@@ -172,25 +178,24 @@
           }
         }
 
-       @media (min-width: 45em) {
+        @media (min-width: 45em) {
            details[open] p, details[open] a {
                 transform-origin:  top;
                 animation-name: fadeIn;
                 animation-duration: 1.5s;
             }
 
-           @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: scaleY(1);
-            }
-            100% {
-                opacity: 1;
-                transform: scaleY(1);
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                    transform: scaleY(1);
+                }
+                100% {
+                    opacity: 1;
+                    transform: scaleY(1);
+                }
             }
         }
-
-       }
 
     </style>
 
@@ -203,7 +208,7 @@
             <section>
                 <h1>Contacts</h1>
                 <section id="searchSection" class="hide">
-                    <input id="search" type="text" onkeyup="filterFunction()" placeholder="Search for names.." title="Type in a name">
+                    <input id="search" class="hide" type="text" onkeyup="filterFunction()" placeholder="Search for names.." title="Type in a name">
                 </section>
             </section>
         </header>
@@ -517,8 +522,6 @@ function filterFunction() {
         }
     }
 }
-
-
 </script>
 
 <script>
@@ -526,14 +529,15 @@ function filterFunction() {
 
 //    document.addEventListener("DOMContentLoaded", function(event) {
         console.log("DOM fully loaded and parsed");
-        var search = document.getElementById("searchSection")
+        var search = document.getElementById("search");
+        console.log(search.attributes.class.nodeValue);
 
-        if (event === true) {
-            search.classList.add("hide");
+        if (event == true) {
+            search.search.attributes.class.nodeValue = "hide";
             console.log('het werkt');
 
         } else {
-            search.classList.remove("hide");
+            search.attributes.class.nodeValue = "show";
             console.log('blablabla');
         }
 //  });
