@@ -207,8 +207,8 @@
         <header>
             <section>
                 <h1>Contacts</h1>
-                <section id="searchSection" class="hide">
-                    <input id="search" type="text" onkeyup="filterFunction()" placeholder="Search for names.." title="Type in a name">
+                <section id="searchSection">
+                    <input id="search" class="hide" type="text" onkeyup="filterFunction()" placeholder="Search for names.." title="Type in a name">
                 </section>
             </section>
         </header>
@@ -526,7 +526,7 @@ function filterFunction() {
 
 <script>
     window.onload = function(event) {
-        var search = document.getElementById("searchSection");
+        var search = document.getElementById("search");
 
         search.attributes['class'].nodeValue = "show";
     };
