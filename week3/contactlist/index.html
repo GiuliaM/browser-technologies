@@ -530,14 +530,13 @@ function filterFunction() {
 //    document.addEventListener("DOMContentLoaded", function(event) {
         console.log("DOM fully loaded and parsed");
         var search = document.getElementById("search");
-        alert(search.className);
 
         if (event == true) {
-            search.attributes.class.nodeValue = "hide";
+            search.attributes['class'].nodeValue = "hide";
             console.log('het werkt');
 
         } else {
-            search.attributes.class.nodeValue = "show";
+            search.attributes['class'].nodeValue = "show";
             console.log('blablabla');
         }
 //  });
