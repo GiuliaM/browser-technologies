@@ -632,28 +632,35 @@
 <script>
 
 function filterFunction() {
+    // creates empty variables
     var input, filter, ul, li, a, i;
+
+    // fills variable
     input = document.getElementById("search");
     filter = input.value.toUpperCase();
     ul = document.getElementById("list");
-    li = ul.getElementsByTagName("details");
+    li = ul.getElementsByTagName("details"); //querySelectAll doesn't work in IE8
+
+    //loop that checks every detail
     for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("summary")[0];
+        a = li[i].getElementsByTagName("summary")[0]; //Get summary from every detailtag
+
+        //change every summary to uppercase to be able to compare it to the user input
         if (a.innerText.toUpperCase().indexOf(filter) > -1) {
-            console.log(a.attributes);
-            li[i].style.display = "";
+            li[i].style.display = ""; // if there is a match found, keep display empty
         } else {
-            li[i].style.display = "none";
+            li[i].style.display = "none"; // if there is no match, change style into display none
         }
     }
 }
 </script>
 
 <script>
+    // if the window loads show the searchbar
     window.onload = function(event) {
         var search = document.getElementById("searchSection");
 
-        search.attributes['class'].nodeValue = "show";
+        search.attributes['class'].nodeValue = "show"; //change the searchSections class into show
     };
 </script>
 
